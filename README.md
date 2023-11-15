@@ -1,4 +1,4 @@
-# Stochastic Modeling of Commodity Prices: Mean-Reversion Simulation for Gas, Coal, and CO₂
+# Mean-Reversion Simulation for Gas, Coal, and CO₂
 For modeling the prices of gas, coal, and carbon dioxide (CO$_2$), a stochastic mean-reverting process is employed, specifically a variant of the Ornstein-Uhlenbeck process adapted for discrete time series data. This method is grounded in the principle that these commodity prices, though subject to random fluctuations, tend to revert to their historical mean values over time.
 
 The mean reversion rate for each commodity is estimated through linear regression, analyzing the logarithmic differences between the actual prices and their rolling mean values. This rate quantifies the speed at which prices revert to the mean, capturing the essential dynamics of the market's historical behavior.
