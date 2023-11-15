@@ -1,1 +1,1 @@
-# Scenario_Generation
+# FuelPriceScenarioGenerator
