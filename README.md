@@ -17,9 +17,7 @@ $$Z_t = \ln(X_t) - \ln(y_{t-1}) - \epsilon'_t$$
 
 
 To simulate future price paths, we take randomly sampled residuals from our regression model. Furthermore, assuming 
-
 $$\epsilon'_{t} \sim N(0,\sigma)$$
-
 we generate random samples for $\epsilon'_{t}$. These residuals represent the random shocks or fluctuations in price, ensuring that each simulated path reflects potential real-world variability. Substituting $y_t$ with the forward curve $F_t$ and $X_t$ with $P_t$, gives us:
 
 $$P_t = \exp\left(\ln\left({F_{t-1}}\right) + \alpha Z_{t-1} + \epsilon_t+ \epsilon'_{t}-\frac{1}{2}\sigma^2\right)$$
