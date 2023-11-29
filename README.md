@@ -14,3 +14,12 @@ $$ P_t = \exp({\ln{F_t} + Z_t})$$
 Where $P_t$ is the future spot prices, and $F_t$ is the future curve or the mean-level to which the natural logarithm of the spot price reverts. $F_t$ is derived from the future data set, representing the expected price level for the future period.
 
 This stochastic modeling approach allows for the creation of multiple simulated future price paths, providing a range of scenarios for gas, coal, and CO$_2$ prices. This methodology is particularly useful for risk assessment and financial planning in markets where commodity prices are a critical factor.
+
+
+# Simulated Energy Data Visualizations
+
+Below are links to the simulated energy data visualizations for gas, coal, and carbon. Click on the links to view the respective PDFs.
+
+- [Simulated Gas Data](./simulated_gas.pdf) - Visualization of simulated gas data.
+- [Simulated Coal Data](./simulated_coal.pdf) - Visualization of simulated coal data.
+- [Simulated Carbon Data](./simulated_carbon.pdf) - Visualization of simulated carbon data.
