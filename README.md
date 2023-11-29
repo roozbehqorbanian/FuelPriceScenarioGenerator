@@ -21,10 +21,10 @@ This stochastic modeling approach allows for the creation of multiple simulated 
 Below are links to the simulated energy data visualizations for gas, coal, and carbon. Click on the links to view the respective PDFs.
 
 ### Simulated Gas Data
-![Simulated Gas Data](./graphs/f28_gas.jpg)
+![Simulated Gas Data](./graphs/simulated_gas.jpg)
 
 ### Simulated Coal Data
-![Simulated Coal Data](./graphs/f28_coal.jpg)
+![Simulated Coal Data](./graphs/simulated_coal.jpg)
 
 ### Simulated Carbon Data
-![Simulated Carbon Data](./graphs/f28_carbon.jpg)
+![Simulated Carbon Data](./graphs/simulated_carbon.jpg)
