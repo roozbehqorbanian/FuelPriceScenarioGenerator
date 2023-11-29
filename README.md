@@ -28,11 +28,11 @@ Where $P_t$ is the future spot prices, and $F_t$ is the future curve or the mean
 
 This stochastic modeling approach allows for the creation of multiple simulated future price paths, providing a range of scenarios for gas, coal, and CO~2~ prices. This methodology is particularly useful for risk assessment and financial planning in markets where commodity prices are a critical factor. The graphs illustrate the simulated price scenarios for gas, coal, and carbon.
 
-### Simulated Gas Data
+### Simulated Gas Price
 ![Simulated Gas Data](./graphs/simulated_gas.jpg)
 
-### Simulated Coal Data
+### Simulated Coal Price
 ![Simulated Coal Data](./graphs/simulated_coal.jpg)
 
-### Simulated Carbon Data
+### Simulated Carbon Price
 ![Simulated Carbon Data](./graphs/simulated_carbon.jpg)
