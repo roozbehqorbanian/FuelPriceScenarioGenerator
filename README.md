@@ -22,7 +22,7 @@ $$P_t = \exp\left(\ln\left({F_{t-1}}\right) + \alpha Z_{t-1} + \epsilon_t+ \epsi
 
 Where $P_t$ is the future spot prices, and $F_t$ is the future curve or the mean-level to which the natural logarithm of the spot price reverts. 
 
-This stochastic modeling approach allows for the creation of multiple simulated future price paths, providing a range of scenarios for gas, coal, and CO~2~prices. This methodology is particularly useful for risk assessment and financial planning in markets where commodity prices are a critical factor. The graphs illustrate the simulated price scenarios for gas, coal, and carbon.
+This stochastic modeling approach allows for the creation of multiple simulated future price paths, providing a range of scenarios for gas, coal, and CO~2~ prices. This methodology is particularly useful for risk assessment and financial planning in markets where commodity prices are a critical factor. The graphs illustrate the simulated price scenarios for gas, coal, and carbon.
 
 ### Simulated Gas Data
 ![Simulated Gas Data](./graphs/simulated_gas.jpg)
