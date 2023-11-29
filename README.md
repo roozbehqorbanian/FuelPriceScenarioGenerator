@@ -8,6 +8,7 @@ $$Z_t = \ln(X_t) - \ln(y_t) = \alpha Z_{t-1} + \epsilon_t$$
 In this equation, $X_t$ is the historical spot price of the commodity at time $t$, and $y_t$ is a rolling mean with a window of 28 days. The term $\alpha$ represents the mean reversion rate, and $\epsilon_t$ is the random shocks or fluctuations in price. We can also write the following equation for the rolling mean values:
 
 $$\ln({\frac{y_t}{y_{t-1}}}) = \epsilon'_{t}$$
+
 $$\ln(y_t) = \ln(y_{t-1}) + \epsilon'_{t} \rightarrow Z_t = \ln(X_t) - \ln(y_{t-1}) - \epsilon'_{t}$$
 
 To simulate future price paths, we take randomly sampled residuals from our regression model. Furthermore, assuming $\epsilon'_{t} \sim N(0,\sigma)$, we generate random samples for $\epsilon'_{t}$. These residuals represent the random shocks or fluctuations in price, ensuring that each simulated path reflects potential real-world variability. Substituting $y_t$ with the forward curve $F_t$ and $X_t$ with $P_t$, gives us:\\
