@@ -18,8 +18,10 @@ def calculate_rolling_log_diff(data_config, commodity, window=28):
 
     df = param_historical_fuels.assign(price=param_historical_fuels[commodity])
     df = df.assign(mean=lambda x: x['price'].rolling(window=window, center=True).mean())
+    df = df.assign(shifted_mean=lambda x: x['price'].rolling(window=window, center=True).mean().shift(+1))
+    df = df.assign(differences_mean=lambda x: np.log(x['mean'] / x['shifted_mean']))
     df = df.assign(differences=lambda x: np.log(x['price']) - np.log(x['mean']))
-    df = df.assign(shifted_diff=lambda x: x['differences'].shift(-1))
+    df = df.assign(shifted_diff=lambda x: x['differences'].shift(+1))
     df = df.dropna(subset=['price', 'mean', 'differences', 'shifted_diff'])  # ensure no NaN values
     Z = df['differences'].values.reshape(-1, 1)  # 'Z' as the differences
     y = df['shifted_diff'].values  # 'y' as the shifted differences
@@ -34,4 +36,4 @@ def calculate_rolling_log_diff(data_config, commodity, window=28):
     # Calculate residuals (epsilons)
     residuals = y - reg.predict(Z)
 
-    return mrr, residuals
+    return mrr, residuals, df['differences_mean']

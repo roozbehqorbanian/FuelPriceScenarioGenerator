@@ -31,4 +31,4 @@ mrr_values, future_fuel_prices, residuals_dict = simulateFutureFuelPrices(param_
 print("Mean reverting rates: ", mrr_values)
 
 # Graph the residuals of the simulations
-plot_residuals(residuals_dict)
+# plot_residuals(residuals_dict)

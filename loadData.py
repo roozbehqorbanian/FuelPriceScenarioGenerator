@@ -22,7 +22,8 @@ def load_data(data_config):
 
         # Loading future data
         param_fuel_future = pd.read_excel(FUTURE_DATA_PATH, header=0, sheet_name=FUTURE_SHEET)
-        param_fuel_future = param_fuel_future.set_index('year').interpolate().loc[START_DATE_FUTURE:END_DATE_FUTURE]
+        param_fuel_future = param_fuel_future.set_index('year').interpolate().resample('D').interpolate().loc[
+                            START_DATE_FUTURE:END_DATE_FUTURE]
 
         return fuels, param_fuel_future
 
