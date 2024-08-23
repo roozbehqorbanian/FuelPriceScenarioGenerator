@@ -7,7 +7,7 @@ from simulateFutureFuelPrices import simulateFutureFuelPrices
 
 # Configuration for simulations and data paths
 simulation_config = {
-    'numScenarios': 100,
+    'numScenarios': 1000,
     'windowSizes': {
         'gas': 28,   # window size for gas
         'coal': 28,  # window size for coal
@@ -19,7 +19,7 @@ simulation_config = {
         'HISTORICAL_SHEET': "Prices",
         'FUTURE_SHEET': 'Fuel price',
         'START_DATE_FUTURE': "2024-01-01 00:00",
-        'END_DATE_FUTURE': "2030-01-01 23:00"
+        'END_DATE_FUTURE': "2030-12-31 23:00"
     }
 }
 
@@ -32,3 +32,7 @@ print("Mean reverting rates: ", mrr_values)
 
 # Graph the residuals of the simulations
 # plot_residuals(residuals_dict)
+
+for fuel, df in future_fuel_prices.items():
+    filename = f"{fuel}_prices.csv.gz"
+    df.to_csv(filename, compression='gzip', index=True)
